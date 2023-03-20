@@ -1,0 +1,59 @@
+{
+  "name": "simple-vite-templete-v2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint .",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "cz": "czg",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.50.6",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/head": "^1.1.23",
+    "pinia": "^2.0.33",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.36.0",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@esbuild-kit/cjs-loader": "^2.4.2",
+    "@iconify-json/carbon": "^1.1.16",
+    "@types/node": "^18.15.3",
+    "@unocss/preset-icons": "^0.50.6",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vue-macros/volar": "^0.9.0",
+    "cz-git": "^1.6.0",
+    "czg": "^1.6.0",
+    "eslint": "^8.36.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.0",
+    "markdown-it-link-attributes": "^4.0.1",
+    "markdown-it-shiki": "^0.8.0",
+    "typescript": "^4.9.3",
+    "unocss": "^0.50.6",
+    "unplugin-auto-import": "^0.15.1",
+    "unplugin-vue-components": "^0.24.1",
+    "unplugin-vue-macros": "^1.10.1",
+    "vite": "^4.2.0",
+    "vite-plugin-inspect": "^0.7.17",
+    "vite-plugin-vue-inspector": "^3.3.2",
+    "vite-plugin-vue-markdown": "^0.22.4",
+    "vite-ssg": "^0.22.1",
+    "vite-ssg-sitemap": "^0.4.3",
+    "vue-tsc": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
+  }
+}
