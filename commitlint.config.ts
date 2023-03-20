@@ -3,21 +3,11 @@ import { execSync } from 'node:child_process'
 const scopes = [
   'pages',
   'components',
-  'hooks',
-  'utils',
-  'types',
+  'router',
   'styles',
-  'project',
-  'core',
-  'style',
-  'ci',
-  'dev',
-  'deploy',
+  'assets',
+  'types',
   'other',
-  'color',
-  'border',
-  'var',
-  'ssr',
 ]
 
 const gitStatus = execSync('git status --porcelain || true')
