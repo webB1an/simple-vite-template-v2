@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "cz": "czg",
     "prepare": "husky install"
