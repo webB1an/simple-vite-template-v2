@@ -1,8 +1,12 @@
 import { execSync } from 'node:child_process'
 
 const scopes = [
-  'docs',
-  'play',
+  'pages',
+  'components',
+  'hooks',
+  'utils',
+  'types',
+  'styles',
   'project',
   'core',
   'style',
@@ -10,7 +14,6 @@ const scopes = [
   'dev',
   'deploy',
   'other',
-  'typography',
   'color',
   'border',
   'var',
