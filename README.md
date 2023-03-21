@@ -4,7 +4,7 @@
 
 - 支持 eslint
 - 支持规范化 commit
-- 支持 markdown，markdown 文件会被解析为 vue 组件，可以直接在 vue 文件中使用，也可以在 markdown 文件中使用 vue 组件
+- 支持 markdown，markdown 文件会被解析为 vue 组件
 - 支持 Components 自动导入和注册组件
 - 支持 AutoImport 自动导入常用的 api
 
