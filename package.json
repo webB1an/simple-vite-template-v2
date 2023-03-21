@@ -27,6 +27,7 @@
     "@types/node": "^18.15.3",
     "@unocss/preset-icons": "^0.50.6",
     "@vitejs/plugin-vue": "^4.1.0",
+    "@vue-macros/reactivity-transform": "^0.2.5",
     "@vue-macros/volar": "^0.9.0",
     "cz-git": "^1.6.0",
     "czg": "^1.6.0",

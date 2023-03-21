@@ -1,5 +1,31 @@
 # simple-vite-templete-v2
 
+1. install dependencies
+
+```sh
+pnpm install
+```
+
+2. start dev server
+
+```sh
+pnpm run dev
+```
+
+3. build
+
+```sh
+pnpm run build
+```
+
+4. commit changes
+
+```sh
+git cz
+```
+
+
+
 **vue 项目模板，支持 markdown**
 
 - 支持 eslint

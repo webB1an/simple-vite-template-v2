@@ -1,0 +1,29 @@
+{
+  "cSpell.words": [
+    "antfu",
+    "unplugin",
+    "shiki",
+    "vitesse",
+    "noopener",
+    "pinia",
+    "vueuse",
+    "templete",
+    "unocss",
+    "Attributify",
+    "commitlint",
+    "iconify",
+    "vmodel",
+    "Prefixs",
+    "nocheck"
+  ],
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.associations": {
+  }
+}
