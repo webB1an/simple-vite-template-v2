@@ -54,3 +54,7 @@ pnpm -D @unocss/preset-icons @iconify-json/carbon
 ```vue
 <div i-carbon-dicom-overlay />
 ```
+
+### Unocss 使用问题
+
+图标通过动态 `:class` 绑定不会显示，具体可以看 [issue](https://github.com/unocss/unocss/issues/1355)，坐着在这个 issue 里说明了这是 UnoCSS 的[工作原理](https://github.com/unocss/unocss#scanning)，需要在 `unocss.config.ts` 中配置 `safelist` 添加动态的 `class` 图标即可。
