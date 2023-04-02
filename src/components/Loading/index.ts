@@ -1,22 +1,19 @@
 import { createApp } from 'vue'
 import type { App } from 'vue'
 import LoadingComponent from './index.vue'
-
-export type Data = Record<string, unknown>
+import type { Props as LoadingProps } from './index.vue'
 
 const options = reactive({
   loading: true,
   text: '加载中...',
 })
 
-let loadingInstance: App
-
-function LoadingService(rootProps: Data) {
-  loadingInstance = createApp(LoadingComponent, rootProps)
+function LoadingService(rootProps: LoadingProps) {
+  const instance = createApp(LoadingComponent, { ...rootProps })
   // provide must above mount
-  loadingInstance.provide('options', options)
+  instance.provide('options', options)
 
-  const vm = loadingInstance.mount(document.createElement('div'))
+  const vm = instance.mount(document.createElement('div'))
   document.body.appendChild(vm.$el)
 
   return {
@@ -25,7 +22,7 @@ function LoadingService(rootProps: Data) {
     },
     hide() {
       options.loading = false
-      loadingInstance.unmount()
+      instance.unmount()
     },
   }
 }
