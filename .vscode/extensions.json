@@ -5,7 +5,6 @@
     "antfu.goto-alias",
     "csstools.postcss",
     "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin",
-    "antfu.unocss"
+    "Vue.vscode-typescript-vue-plugin"
   ]
 }
