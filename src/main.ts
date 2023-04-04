@@ -3,6 +3,7 @@ import App from './App.vue'
 import { setupStore } from './store'
 import { setupRouter } from './router'
 import { setComponents } from './components'
+import { setDirectives } from './directives'
 
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
@@ -15,6 +16,7 @@ async function bootstrap() {
   await setupRouter(app)
 
   setComponents(app)
+  setDirectives(app)
 
   app.mount('#app')
 }
