@@ -1,4 +1,4 @@
-import errorImage from '~/assets/error.png'
+import errorImage from '~/assets/ai_compass.png'
 
 const imageIsExist = (src: string) => {
   return new Promise((resolve) => {
@@ -13,20 +13,26 @@ const imageIsExist = (src: string) => {
   })
 }
 
-export default function lazy(el: any) {
-  const src = el.src
-  el.src = ''
-  const io = new IntersectionObserver(([{ isIntersecting }]) => {
-    if (isIntersecting) {
-      imageIsExist(src).then((exist) => {
-        if (exist)
-          el.src = src
-        else
-          el.src = errorImage
+export const lazy = {
+  mounted(el: Element) {
+    const src = el.getAttribute('custom-src')!
+    const io = new IntersectionObserver(([{ isIntersecting }]) => {
+      if (isIntersecting) {
+        imageIsExist(src).then((exist) => {
+          if (exist)
+            el.setAttribute('src', src)
+          else
+            el.setAttribute('src', errorImage)
 
-        io.disconnect()
-      })
-    }
-  })
-  io.observe(el)
+          io.disconnect()
+        })
+      }
+    })
+    io.observe(el)
+  },
+}
+
+export default {
+  name: 'lazy',
+  directive: lazy,
 }
