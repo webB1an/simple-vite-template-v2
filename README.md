@@ -1,4 +1,4 @@
-# simple-vite-templete-v2
+# simple-vite-template-v2
 
 1. install dependencies
 
