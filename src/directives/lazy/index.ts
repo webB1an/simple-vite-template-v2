@@ -1,4 +1,4 @@
-import errorImage from '~/assets/ai_compass.png'
+import errorImage from '~/assets/error.png'
 
 const imageIsExist = (src: string) => {
   return new Promise((resolve) => {
